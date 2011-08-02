@@ -1,0 +1,6 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^([a-zA-Z]+)$ /index.php?page=$1 [L]
+RewriteRule ^([a-zA-Z]+)-([a-zA-Z0-9]+)$ /index.php?page=$1&variable1=$2 [L]
+RewriteRule ^([a-zA-Z]+)-([a-zA-Z0-9]+)-([a-zA-Z0-9]+)$ /index.php?page=$1&variable1=$2&variable2=$3 [L]
+RewriteRule ^([a-zA-Z]+)-([a-zA-Z0-9]+)-([a-zA-Z0-9]+)-([a-zA-Z0-9]+)$ /index.php?page=$1&variable1=$2&variable2=$3&variable3=$4 [L]
